@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Zhang</title>
+  <script>
+    // Old links from when the site lived at the root: /foo.html -> /website/foo.html
+    if (!/^\/website(\/|$)/.test(location.pathname)) {
+      location.replace('/website' + location.pathname + location.search + location.hash);
+    }
+  </script>
+  <style>body { background: #08070a; color: #c6ecff; font-family: monospace; }</style>
+</head>
+<body>
+  <p>Page not found. <a href="https://danielzhang122.github.io/website/">Go to the site</a></p>
+</body>
+</html>
